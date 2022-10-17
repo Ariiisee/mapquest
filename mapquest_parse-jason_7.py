@@ -3,7 +3,7 @@ import requests
 
 main_api = "https://www.mapquestapi.com/directions/v2/route?"
 key = "hWmoxgA3H7M7HOGZe2P51HUPcLVKXNdw"
-print("Brought to you by The Boys\nALexis Alfonso\nAris Manengyao\nDan Bautista\nRonald Soriano\n")
+print("THE BOYS\nALexis Alfonso\nAris Manengyao\nDan Bautista\nRonald Soriano")
 
 while True:
 
@@ -25,11 +25,16 @@ while True:
         print("API Status: " + str(json_status) + " = A successful route call.\n")
         print("===================================================")
         print("Directions from: " + (orig) + " to " + (dest))
+        print("===================================================")
         print("Trip Duration:   " + (json_data["route"]["formattedTime"]))
+        print("===================================================")
         print("Kilometers:   " + str("{:.2f}".format((json_data["route"]["distance"])*1.61)))
+        print("===================================================")
         print("Fuel Used (Ltr): " + str("{:.2f}".format((json_data["route"]["fuelUsed"])*3.78)))
+        print("===================================================")
         for each in json_data["route"]["legs"][0]["maneuvers"]:
             print((each["narrative"]) + " (" + str("{:.2f}".format((each["distance"])*1.61) + " km)"))
+            print("===================================================")
         print("===================================================\n")
 
     elif json_status == 402:
