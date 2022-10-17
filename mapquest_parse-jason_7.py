@@ -3,7 +3,7 @@ import requests
 
 main_api = "https://www.mapquestapi.com/directions/v2/route?"
 key = "hWmoxgA3H7M7HOGZe2P51HUPcLVKXNdw"
-print("THE BOYS\nALexis Alfonso\nAris Manengyao\nDan Bautista\nRonald Soriano")
+print("THE BOYS\n *ALexis Alfonso\n *Aris Manengyao\n *Dan Bautista\n *Ronald Soriano")
 
 while True:
 
