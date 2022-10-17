@@ -3,6 +3,8 @@ import requests
 
 main_api = "https://www.mapquestapi.com/directions/v2/route?"
 key = "hWmoxgA3H7M7HOGZe2P51HUPcLVKXNdw"
+print("THE BOYS\nALexis Alfonso\nAris Manengyao\nDan Bautista\nRonald Soriano")
+
 while True:
 
     orig = input("Starting Location: ")
@@ -43,3 +45,4 @@ while True:
         print("For Status Code: " + str(json_status) + "; Refer to:")
         print("https://developer.mapquest.com/documentation/directions=api/status=codes")
         print("*************************************************\n")
+        
